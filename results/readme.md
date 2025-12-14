@@ -27,3 +27,5 @@ Object_ID,Length,Gamma,1st_assignment,score1,2nd_assignment,score2,confidence
 ......
 
 ```
+## 结论
+结果过于粗糙，不建议采用。  
