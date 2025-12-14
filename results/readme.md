@@ -1,6 +1,6 @@
 对于长读长和短读长数据，都只生成的一个结果结果文件，显得很粗糙。　　
 
-｀｀｀
+```
 Object_ID,Length,Gamma,1st_assignment,score1,2nd_assignment,score2,confidence
 66ce4dde_0,300,0,NA,0,NA,0,0
 66ce4dde_1,300,0.00711744,2734252,2,NA,0,1
@@ -21,4 +21,4 @@ Object_ID,Length,Gamma,1st_assignment,score1,2nd_assignment,score2,confidence
 66ce4dde_16,300,0.00355872,1349410,1,NA,0,1
 66ce4dde_17,300,0,NA,0,NA,0,0
 66ce4dde_18,300,0.0106762,2956029,1,2843828,1,0.5
-｀｀｀
+```
