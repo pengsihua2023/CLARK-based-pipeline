@@ -47,34 +47,6 @@ sbatch slurm_virus_classification.sh
 - **Output Directory**: results_long
 - **k-mer Size**: 20
 
-## Post-Submission Operations
-
-### Check Job Status
-```bash
-squeue -u $USER
-```
-
-### View Job Details
-```bash
-squeue -j <job_id> -l
-```
-
-### Cancel Job
-```bash
-scancel <job_id>
-```
-
-### View Output Logs
-
-After job completion, view output and error logs:
-```bash
-# View standard output
-cat CLARK_Virus_Classification_<job_id>.out
-
-# View error log
-cat CLARK_Virus_Classification_<job_id>.err
-```
-
 ## Result File Location
 
 After classification is complete, result files will be saved at:
@@ -88,3 +60,4 @@ After classification is complete, result files will be saved at:
 2. Ensure CLARK database is built (at `/scratch/sp96859/Meta-genome-data-analysis/Apptainer/databases/CLARK_db/viruses`)
 3. Ensure sufficient storage space for results
 4. Jobs may take a long time, please be patient
+
