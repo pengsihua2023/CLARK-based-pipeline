@@ -684,56 +684,6 @@ chmod +x calculate_abundance.sh
 ./calculate_abundance.sh virus_classification.csv virus_abundance.csv
 ```
 
-## Common Issues
-
-### 1. Compilation Errors
-
-**Problem**: Errors during compilation
-
-**Solution**:
-```bash
-# Ensure necessary compilation tools are installed
-sudo apt-get install build-essential g++  # Ubuntu/Debian
-# or
-brew install gcc  # macOS
-
-# Check compiler version
-g++ --version
-```
-
-### 2. Database Download Failure
-
-**Problem**: Slow or failed database download
-
-**Solution**:
-- Use mirror sites
-- Check network connection
-- Manually download database files and place them in the specified directory
-
-### 3. Out of Memory
-
-**Problem**: Insufficient memory when processing large datasets
-
-**Solution**:
-- Increase system memory
-- Use smaller k-mer values (e.g., `-k 25`)
-- Process data in batches
-
-### 4. Empty Classification Results
-
-**Problem**: No sequences were classified
-
-**Solution**:
-- Check if database is correctly built
-- Lower classification threshold (`--threshold`)
-- Check if input file format is correct
-
-### 5. Performance Optimization
-
-**Optimization Recommendations**:
-- Use multithreading (`-t` parameter, recommended to set to CPU core count)
-- Use SSD storage to improve I/O performance
-- For large datasets, consider using CLARK-S (sparse mode)
 
 ## Complete Virus Detection and Classification Pipeline
 
@@ -900,4 +850,5 @@ export CLARK_DB_DIR=/path/to/CLARK_DB
 export INPUT_DIR=/path/to/fastq_files
 ./virus_detection_pipeline.sh
 ```
+
 
